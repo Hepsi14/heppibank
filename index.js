@@ -13,6 +13,7 @@ App.use(cors());
 
 
 App.use('/api/bank',bank);
+app.get('/',(req,res)=>{res.send('server connected')})
 
 // mongoose.connect('mongodb://localhost:27017/bank')
 // .then(()=>console.log('db connected'))
